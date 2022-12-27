@@ -1,10 +1,13 @@
 {
   "name": "minifylinkreact",
+  "homepage": "https://danssui2.github.io/shortlink-react/",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
