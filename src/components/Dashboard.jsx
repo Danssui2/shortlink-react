@@ -18,14 +18,12 @@ export default function Dashboard() {
   }
 
 useEffect(() => {
-  return async () => {
-    if (user) {
-      fetchLink()
-      .then(() => console.log("fetched"))
-      .catch(err => ReactDOM.render(<Toast>Something Went Wrong, Please reload</Toast>, document.getElementById('modal')))
-    } else {
-      navigate('/login')
-    }
+  if (user) {
+    fetchLink()
+    .then(() => console.log("fetched"))
+    .catch(err => ReactDOM.render(<Toast>Something Went Wrong, Please reload</Toast>, document.getElementById('modal')))
+  } else {
+    navigate('/login')
   }
 }, [])
 

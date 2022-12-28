@@ -7,13 +7,14 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@react-oauth/google": "^0.5.1",
     "axios": "^1.2.1",
+    "gh-pages": "^4.0.0",
     "nanoid": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
